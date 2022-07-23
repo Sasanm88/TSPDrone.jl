@@ -2,7 +2,7 @@
 # divide-partition-and-search (DPS) heuristic
 function divide_partition_search(
     Ct::Matrix{Float64},
-    Cd::Matrix{Float64};
+    Cd::Matrix{Float64},
     n_groups::Int = 1, 
     local_search_methods::Vector{Function} = Function[two_point_move, one_point_move, two_opt_move], 
     flying_range::Float64 = MAX_DRONE_RANGE, 
